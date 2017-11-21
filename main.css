@@ -1,0 +1,128 @@
+
+* {box-sizing:border-box}
+
+body {
+  font-family: "Montserrat", "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:0
+}
+/* Header */
+.logo{
+  margin: 20px;
+  width: 100px;
+
+}
+
+/* Title */
+.title{
+  text-align: center;
+  color: #333333;
+}
+
+h1{
+  font-size: 23px;
+  font-weight: 300;
+  margin: 4px 0 0 0;
+  line-height: 1;
+
+}
+h2{
+  font-size: 50px;
+  margin-top: 5px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.colors {
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 5px;
+    line-height: 1;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#000000,#AF233E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 1s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+/* Slideshow container */
+.mySlides {
+  display:none
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Color name */
+.text {
+  color: #cccccc;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Color picker */
+.dot {
+  cursor: pointer;
+  height: 35px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 2px;
+  display: inline-block;
+  transition: box-shadow 0.6s ease;
+}
+
+.solid-black{background-color: #2E2E2E}
+.midnight-silver{background-color: #43424F}
+.obsidian-black{background-color: #000000}
+.deep-blue{background-color: #212252}
+.silver{background-color: #A8A1A2}
+.white{background-color: #ECEBEC}
+.red{background-color: #AF233E; margin-right: 30px;}
+.orange{background-color: #D34F23}
+.yellow{background-color: #F8A00C}
+.white-lotus{background-color: #E9E8E9; border-bottom: 3px solid #f8a00d;}
+.green-lotus{background-color: #2A5842; border-bottom: 3px solid #f8a00d;}
+.active, .dot:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
