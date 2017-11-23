@@ -22,6 +22,8 @@ body {
 .title{
   text-align: center;
   color: #333333;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: saturate(50%);
 }
 
 h1{
@@ -45,7 +47,7 @@ h2{
     margin-top: 5px;
     line-height: 1;
     color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#000000,#AF233E);
+    background-image: -webkit-linear-gradient(74deg,#ff0000,#AF233E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 1s infinite linear;
@@ -83,6 +85,11 @@ h2{
 }
 
 /* Color picker */
+.color-picker{
+  margin: 0px 10px 60px 10px;
+  text-align: center;
+}
+
 .dot {
   cursor: pointer;
   height: 35px;
@@ -100,11 +107,12 @@ h2{
 .deep-blue{background-color: #212252}
 .silver{background-color: #A8A1A2}
 .white{background-color: #ECEBEC}
-.red{background-color: #AF233E; margin-right: 30px;}
-.orange{background-color: #D34F23}
-.yellow{background-color: #F8A00C}
-.white-lotus{background-color: #E9E8E9; border-bottom: 3px solid #f8a00d;}
-.green-lotus{background-color: #2A5842; border-bottom: 3px solid #f8a00d;}
+.red{background-color: #c31130; margin-right: 30px;}
+.orange{background-color: #F68B28}
+.yellow{background-color: #FBB842}
+.glacier-blue{background-color: #BBCBD0}
+.electric-blue{background-color: #0F93DA}
+.green-lotus{background-color: #3d7866; border-bottom: 3px solid #f8a00d;}
 .active, .dot:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
   margin-bottom: 1px;
