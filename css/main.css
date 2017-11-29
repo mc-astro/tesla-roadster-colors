@@ -94,7 +94,7 @@ h2{
   cursor: pointer;
   height: 35px;
   width: 25px;
-  margin: 0 2px;
+  margin: 1px 2px;
   background-color: #bbb;
   border-radius: 2px;
   display: inline-block;
@@ -107,7 +107,7 @@ h2{
 .deep-blue{background-color: #212252}
 .silver{background-color: #A8A1A2}
 .white{background-color: #ECEBEC}
-.red{background-color: #c31130; margin-right: 14px;}
+.red{background-color: #c31130;}
 .orange{background-color: #F68B28}
 .yellow{background-color: #FBB842}
 .glacier-blue{background-color: #BBCBD0}
